@@ -39,6 +39,7 @@
 
 .about-section__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   /* Equivalent to w-full */
@@ -60,6 +61,18 @@
   /* Equivalent to px-3 */
   padding-right: 0.75rem;
   /* Equivalent to px-3 */
+  max-width: 200px;
+  /* Ensure items don't stretch too wide */
+}
+
+.about-section__item-description {
+  width: 100%;
+  /* Equivalent to w-full */
+  word-break: break-word;
+  /* Ensures long words break to fit the container */
+  text-align: center;
+  /* Centers the text */
+}
 }
 
 .about-section__item-title {
