@@ -148,3 +148,17 @@
   color: #ab8e4e;
   background-color: #fafaf7;
 }
+
+#fullsize-image1,
+#fullsize-image2 {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* Transition for smooth fade */
+}
+
+#fullsize-image1.show,
+#fullsize-image2.show {
+  opacity: 1;
+  /* Make the image visible when the 'show' class is added */
+}
