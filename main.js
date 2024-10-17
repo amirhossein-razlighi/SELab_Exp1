@@ -13,6 +13,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     images[currentImageIndex].classList.add('show');
   }
+  function toggleDialog(show) {
+    var dialog = document.getElementById('orderSelectionDialog');
+    if (show) {
+      dialog.style.display = 'initial';
+    } else {
+      dialog.style.display = 'none';
+    }
+  }
+
+  document.getElementById('orderSelection').addEventListener('click', function () {
+    toggleDialog(true);
+  });
+
+  document.getElementById('finishOrderSelection').addEventListener('click', function () {
+    toggleDialog(false);
+  });
+
+  document.getElementById('book-now-button').addEventListener('click', function () {
+    alert('Your Booking is done successfully!');
+  });
 
   setInterval(switchImage, 3000); // Change image every 3 seconds
 });
+
