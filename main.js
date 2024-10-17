@@ -30,6 +30,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleDialog(false);
   });
 
+  document.getElementById('book-now-button').addEventListener('click', function () {
+    alert('Your Booking is done successfully!');
+  });
+
   setInterval(switchImage, 3000); // Change image every 3 seconds
 });
 
