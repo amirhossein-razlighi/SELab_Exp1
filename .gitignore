@@ -33,6 +33,9 @@ _testmain.go
 
 # mac hidden files
 .DS_Store
+.DS_Store/*
+.dist
+.dist/*
 
 ##other
 #node_modules/
