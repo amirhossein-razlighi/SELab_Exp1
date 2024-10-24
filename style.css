@@ -1,3 +1,78 @@
+body {
+    font-family: 'Libre Baskerville', serif;    
+    color: #b4a388;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+}
+
+h4, h4 a, h4 a:hover {
+    color: #8f7356;
+}
+
+h4 {
+    font-size: 19px !important;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.section-border-bottom {
+    border-bottom: 1px solid #cdd1cf;
+}
+
+.plus-minus-toggle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #947848;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.plus-minus-toggle::before {
+    content: '+';
+    font-size: 24px;
+}
+
+.peer:checked ~ .plus-minus-toggle::before {
+    content: '−';
+}
+
+input {
+    flex: 1 1 42rem;
+    padding: 1rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+input:focus, input:focus-visible {
+    outline: none !important;
+    border: none;
+}
+
 .layout {
     background-color: #ebebeb;
     padding: 2rem;
@@ -10,75 +85,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
-    border-radius: 0.375rem;
-    /* Rounded-md equivalent in CSS */
-}
-
-
-.about-section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    /* Equivalent to p-4 */
-    gap: 1rem;
-    /* Equivalent to gap-4 */
-    border-bottom: 1px solid #e1e4e3;
-    /* Equivalent to section-border-bottom */
-}
-
-.about-section__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-    /* Equivalent to mb-8 */
-}
-
-.about-section__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    /* Equivalent to w-full */
-    align-items: center;
-    gap: 1rem;
-    /* Equivalent to gap-4 */
-    margin-bottom: 1.5rem;
-    /* Equivalent to mb-6 */
-}
-
-.about-section__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    /* Equivalent to gap-6 */
-    padding-left: 0.75rem;
-    /* Equivalent to px-3 */
-    padding-right: 0.75rem;
-    /* Equivalent to px-3 */
-    max-width: 200px;
-    /* Ensure items don't stretch too wide */
-}
-
-.about-section__item-description {
-    width: 100%;
-    /* Equivalent to w-full */
-    word-break: break-word;
-    /* Ensures long words break to fit the container */
-    text-align: center;
-    /* Centers the text */
-}
-
-.about-section__item-title {
-    font-size: 19px;
-    /* Equivalent to text-[19px] */
-    color: #8f7356;
-    /* Equivalent to text-[#8f7356] */
+    border-radius: 0.375rem; /* Rounded-md equivalent in CSS */
 }
 
 .nav-bar {
@@ -87,18 +94,13 @@
     justify-content: space-between;
     background-color: #f0efeb;
     height: 90px;
-    border-top-left-radius: 0.375rem;
-    /* Rounded-t-md equivalent in CSS */
-    border-top-right-radius: 0.375rem;
-    /* Rounded-t-md equivalent in CSS */
-    padding-left: 2rem;
-    /* Equivalent to px-8 */
-    padding-right: 2rem;
-    /* Equivalent to px-8 */
+    border-top-left-radius: 0.375rem; /* Rounded-t-md equivalent in CSS */
+    border-top-right-radius: 0.375rem; /* Rounded-t-md equivalent in CSS */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Equivalent to shadow-md */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-md */
 }
 
 .nav-bar-menu {
@@ -106,8 +108,7 @@
     transition: all;
     font-style: italic;
     color: #68502e;
-    height: 100%;
-    /* Equivalent to h-full */
+    height: 100%; /* Equivalent to h-full */
 }
 
 .active-nav-bar-menu-btn {
@@ -116,90 +117,114 @@
     border-style: solid;
     color: #ab8e4e !important;
     background-color: #fafaf7;
-    padding-top: 2rem;
-    /* Equivalent to py-8 */
-    padding-right: 2rem;
-    /* Equivalent to px-8 */
-    padding-bottom: 2rem;
-    /* Equivalent to py-8 */
-    padding-left: 2rem;
-    /* Equivalent to px-8 */
-    transition-duration: 300ms;
-    /* Equivalent to duration-300 */
+    padding-top: 2rem; /* Equivalent to py-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    padding-bottom: 2rem; /* Equivalent to py-8 */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    transition-duration: 300ms; /* Equivalent to duration-300 */
 }
 
 .nav-bar-menu-btn {
     border-color: #e1e4e3;
     border-width: 1px;
     border-style: solid;
-    padding-top: 2rem;
-    /* Equivalent to py-8 */
-    padding-right: 2rem;
-    /* Equivalent to px-8 */
-    padding-bottom: 2rem;
-    /* Equivalent to py-8 */
-    padding-left: 2rem;
-    /* Equivalent to px-8 */
-    transition-duration: 300ms;
-    /* Equivalent to duration-300 */
+    padding-top: 2rem; /* Equivalent to py-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    padding-bottom: 2rem; /* Equivalent to py-8 */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    transition-duration: 300ms; /* Equivalent to duration-300 */
 }
-
+  
 .nav-bar-menu-btn:hover {
     color: #ab8e4e;
     background-color: #fafaf7;
 }
-
-#fullsize-image1,
-#fullsize-image2 {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    /* Transition for smooth fade */
+  
+.about-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Equivalent to p-4 */
+    gap: 1rem; /* Equivalent to gap-4 */
+    border-bottom: 1px solid #e1e4e3; /* Equivalent to section-border-bottom */
 }
 
-#fullsize-image1.show,
-#fullsize-image2.show {
-    opacity: 1;
-    /* Make the image visible when the 'show' class is added */
+.about-section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
 }
 
+.about-section__items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Equivalent to w-full */
+    align-items: center;
+    gap: 1rem; /* Equivalent to gap-4 */
+    margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+}  
 
+.about-section__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Equivalent to gap-6 */
+    padding-left: 0.75rem; /* Equivalent to px-3 */
+    padding-right: 0.75rem; /* Equivalent to px-3 */
+}
+
+.about-section__item-title {
+    font-size: 19px; /* Equivalent to text-[19px] */
+    color: #8f7356; /* Equivalent to text-[#8f7356] */
+}
+
+.btn {
+    border-color: #947848; /* Equivalent to border-[#947848] */
+    border-width: 2px; /* Equivalent to border-2 */
+    border-style: solid;
+    color: #947848; /* Equivalent to text-[#947848] */
+    padding-left: 15px; /* Equivalent to px-[15px] */
+    padding-right: 15px; /* Equivalent to px-[15px] */
+    padding-top: 10px; /* Equivalent to py-[10px] */
+    padding-bottom: 10px; /* Equivalent to py-[10px] */
+    transition-duration: 300ms; /* Equivalent to duration-300 */
+}
+  
+.btn:hover {
+    background-color: #947848; /* Equivalent to hover:bg-[#947848] */
+    color: white; /* Equivalent to hover:text-white */
+}
+  
 .book-section__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    /* Equivalent to p-8 */
+    padding: 2rem; /* Equivalent to p-8 */
 }
 
 .book-section__title {
-    font-size: 30px;
-    /* Equivalent to text-[30px] */
-    margin-bottom: 2rem;
-    /* Equivalent to mb-8 */
+    font-size: 30px; /* Equivalent to text-[30px] */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
 }
 
 .book-section__form {
-    margin-top: 2rem;
-    /* Equivalent to mt-8 */
-    margin-bottom: 2rem;
-    /* Equivalent to mb-8 */
-    width: 500px;
-    /* Equivalent to w-[500px] */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    width: 500px; /* Equivalent to w-[500px] */
 }
 
 .input {
-    margin-top: 0.25rem;
-    /* Equivalent to mt-1 */
+    margin-top: 0.25rem; /* Equivalent to mt-1 */
     padding: 1rem;
     display: block;
-    width: 100%;
-    /* Equivalent to w-full */
-    border-radius: 0.375rem;
-    /* Equivalent to rounded-md */
-    border-bottom: 1px solid #e1e4e3;
-    /* Equivalent to border-gray-300 */
+    width: 100%; /* Equivalent to w-full */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    border-bottom: 1px solid #e1e4e3; /* Equivalent to border-gray-300 */
 }
 
 .input:focus {
@@ -208,78 +233,55 @@
 
 .input-label {
     display: block;
-    font-size: 0.875rem;
-    /* Equivalent to text-sm */
-    font-weight: 500;
-    /* Equivalent to font-medium */
-    color: #4a5568;
-    /* Equivalent to text-gray-700 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: #4a5568; /* Equivalent to text-gray-700 */
 }
 
 .plus-btn {
-    border-radius: 9999px;
-    /* Equivalent to rounded-full */
-    border-color: #947848;
-    /* Equivalent to border-[#947848] */
-    border-width: 2px;
-    /* Equivalent to border-2 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    border-color: #947848; /* Equivalent to border-[#947848] */
+    border-width: 2px; /* Equivalent to border-2 */
     border-style: solid;
-    color: #947848;
-    /* Equivalent to text-[#947848] */
-    padding: 4px;
-    /* Equivalent to p-[4px] */
-    transition-duration: 300ms;
-    /* Equivalent to duration-300 */
-    line-height: 2px;
-    /* Equivalent to leading-[2px] */
+    color: #947848; /* Equivalent to text-[#947848] */
+    padding: 4px; /* Equivalent to p-[4px] */
+    transition-duration: 300ms; /* Equivalent to duration-300 */
+    line-height: 2px; /* Equivalent to leading-[2px] */
 }
-
+  
 .plus-btn:hover {
-    background-color: #947848;
-    /* Equivalent to hover:bg-[#947848] */
-    color: white;
-    /* Equivalent to hover:text-white */
+    background-color: #947848; /* Equivalent to hover:bg-[#947848] */
+    color: white; /* Equivalent to hover:text-white */
 }
-
+  
 .dialog__overlay {
-    display: none;
-    /* Equivalent to hidden */
+    display: none; /* Equivalent to hidden */
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(125, 125, 125, 0.75);
-    /* Equivalent to bg-gray-500 bg-opacity-75 */
-    transition-duration: 800ms;
-    /* Equivalent to duration-800 */
+    background-color: rgba(125, 125, 125, 0.75); /* Equivalent to bg-gray-500 bg-opacity-75 */
+    transition-duration: 800ms; /* Equivalent to duration-800 */
 }
 
 .dialog__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    /* Equivalent to min-h-screen */
+    min-height: 100vh; /* Equivalent to min-h-screen */
 }
 
 .dialog__card {
-    background-color: #ffffff;
-    /* Equivalent to bg-white */
-    border-radius: 0.375rem;
-    /* Equivalent to rounded-lg */
+    background-color: #ffffff; /* Equivalent to bg-white */
+    border-radius: 0.375rem; /* Equivalent to rounded-lg */
     text-align: left;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Equivalent to shadow-xl */
-    transition-duration: 800ms;
-    /* Equivalent to duration-800 */
-    max-width: 32rem;
-    /* Equivalent to max-w-lg */
-    width: 100%;
-    /* Equivalent to w-full */
-    padding: 1.5rem;
-    /* Equivalent to p-6 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Equivalent to shadow-xl */
+    transition-duration: 800ms; /* Equivalent to duration-800 */
+    max-width: 32rem; /* Equivalent to max-w-lg */
+    width: 100%; /* Equivalent to w-full */
+    padding: 1.5rem; /* Equivalent to p-6 */
 }
 
 .dialog__item {
@@ -288,120 +290,106 @@
 }
 
 .dialog__item-image {
-    width: 5rem;
-    /* Equivalent to w-20 */
-    height: 5rem;
-    /* Equivalent to h-20 */
-    object-fit: cover;
-    /* Equivalent to object-cover */
-    margin-right: 1rem;
-    /* Equivalent to mr-4 */
+    width: 5rem; /* Equivalent to w-20 */
+    height: 5rem; /* Equivalent to h-20 */
+    object-fit: cover; /* Equivalent to object-cover */
+    margin-right: 1rem; /* Equivalent to mr-4 */
     border-radius: 0.4rem;
 }
 
 .dialog__item-title {
-    font-size: 1.125rem;
-    /* Equivalent to text-lg */
-    font-weight: 500;
-    /* Equivalent to font-medium */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: 500; /* Equivalent to font-medium */
 }
 
 .dialog__item-price {
-    font-size: 0.875rem;
-    /* Equivalent to text-sm */
-    color: #718096;
-    /* Equivalent to text-gray-500 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #718096; /* Equivalent to text-gray-500 */
 }
-
-/* New styles for the Menu Page */
-.menu-section {
-    padding: 40px 20px;
-}
-
-.menu-title {
-    font-size: 36px;
-    color: #947848;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.menu-category {
-    margin-bottom: 30px;
-}
-
-.category-title {
-    font-size: 28px;
-    color: #68502e;
-    margin-bottom: 20px;
-}
-
-.subcategory {
-    margin-bottom: 20px;
-}
-
-.subcategory-title {
-    font-size: 24px;
-    color: #947848;
-    margin-bottom: 10px;
-}
-
-.menu-item {
+  
+.menu-header__container {
+    width: 100%; /* Equivalent to w-full */
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #e1e4e3;
+    padding-top: 2.5rem; /* Equivalent to py-10 */
+    padding-bottom: 2.5rem;
+    background-color: rgba(235, 230, 232, 1); /* Equivalent to bg-[rgba(235,230,232,1)] */
 }
 
-.menu-item-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
+.menu-header {
+    font-size: 2.5rem; /* Equivalent to text-[40px] */
+    color: #947848; /* Equivalent to text-[#947848] */
 }
 
-.menu-item-content {
-    flex-grow: 1;
+.menu__container {
+    background-color: #ffffff; /* Equivalent to bg-white */
+    padding-left: 1.5rem; /* Equivalent to px-6 */
+    padding-right: 1.5rem; /* Equivalent to px-6 */
+    padding-top: 3rem; /* Equivalent to py-12 */
+    padding-bottom: 3rem; /* Equivalent to py-12 */
 }
 
-.menu-item-title {
-    font-size: 20px;
-    color: #68502e;
-    margin-bottom: 5px;
+.menu__first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Equivalent to gap-6 */
+    padding-bottom: 3rem; /* Equivalent to pb-12 */
 }
 
-.menu-item-description {
-    font-size: 16px;
-    color: #4a5568;
+.table_menu td.c1 {
+    text-align: left;
+    width: 70%;
 }
 
-.menu-item-price {
-    font-size: 18px;
+.table_menu td.c2 {
+    width: 30%;
     color: #947848;
-    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
 }
 
-.menu-divider {
-    border: 0;
-    height: 1px;
-    background: #e1e4e3;
-    margin: 20px 0;
+table tr:first-child td {
+    box-shadow: inset 0px 4px 3px -2px rgba(0,0,0,.06) !important;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-item-image {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
-    }
-
-    .menu-item-price {
-        margin-top: 10px;
-    }
+table tr td:last-child {
+    border-right: 0 !important;
 }
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+    border-width: 0 1px 1px 0;
+    border-color: rgba(0,0,0,.06) !important;
+    padding: 20px;
+}
+
+.menu__second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Equivalent to gap-6 */
+    padding-top: 3rem; /* Equivalent to pt-12 */
+}
+
+.gallery__first-section-first-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem; /* Equivalent to gap-10 */
+    text-align: center;
+    width: 50%; /* Equivalent to w-1/2 */
+}
+
+.gallery__first-section-second-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem; /* Equivalent to gap-4 */
+}
+  
