@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   let currentImageIndex = 0;
 
   const images = [
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   document.getElementById('book-now-button').addEventListener('click', function () {
-    alert('Your Booking is done successfully!');
+    alert('Your Booking is completed successfully.');
   });
 
   setInterval(switchImage, 3000); // Change image every 3 seconds
