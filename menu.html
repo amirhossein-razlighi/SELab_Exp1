@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.3.5/src/css/preflight.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="main.js"></script>
+    <title>CoffeeShop!</title>
+</head>
+
+<body class="layout">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="nav-bar">
+            <a href="./index.html">
+                <img src="https://themes.muffingroup.com/be/cafe/wp-content/uploads/2015/05/cafe.png" alt="Logo"
+                    style="height: 30px;">
+            </a>
+        
+            <div class="nav-bar-menu">
+                <a href="./index.html" class="nav-bar-menu-btn">Home</a>
+                <a href="./menu.html" class="active-nav-bar-menu-btn">Menu</a>
+                <a href="./gallery.html" class="nav-bar-menu-btn">Gallery</a>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Menu Section -->
+        <main>
+            <section class="menu-section">
+                <h1 class="menu-title">Our Menu</h1>
+
+                <!-- Main Category: Hot Coffee Drinks -->
+                <div class="menu-category">
+                    <h2 class="category-title">Hot Coffee Drinks</h2>
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Espresso.webp"
+                            alt="Espresso">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Espresso</h4>
+                            <p class="menu-item-description">A strong and rich shot of espresso.</p>
+                        </div>
+                        <p class="menu-item-price">$2.50</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Cappuccino.webp"
+                            alt="Cappuccino">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Cappuccino</h4>
+                            <p class="menu-item-description">Steamed milk and foam topped with espresso.</p>
+                        </div>
+                        <p class="menu-item-price">$3.50</p>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="menu-divider">
+                </div>
+
+                <!-- Main Category: Cold Drinks -->
+                <div class="menu-category">
+                    <h2 class="category-title">Cold Drinks</h2>
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Iced Latte.webp"
+                            alt="Iced Latte">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Iced Latte</h4>
+                            <p class="menu-item-description">Espresso mixed with cold milk and ice.</p>
+                        </div>
+                        <p class="menu-item-price">$4.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Iced Americano.webp"
+                            alt="Iced Americano">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Iced Americano</h4>
+                            <p class="menu-item-description">Chilled water with a shot of espresso.</p>
+                        </div>
+                        <p class="menu-item-price">$3.00</p>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="menu-divider">
+                </div>
+
+                <!-- Main Category: Shakes -->
+                <div class="menu-category">
+                    <h2 class="category-title">Shakes</h2>
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Vanilla Milkshake.webp"
+                            alt="Vanilla Milkshake">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Vanilla Milkshake</h4>
+                            <p class="menu-item-description">Classic vanilla shake with ice cream.</p>
+                        </div>
+                        <p class="menu-item-price">$5.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Chocolate Milkshake.webp"
+                            alt="Chocolate Milkshake">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Chocolate Milkshake</h4>
+                            <p class="menu-item-description">Rich chocolate shake with ice cream.</p>
+                        </div>
+                        <p class="menu-item-price">$5.50</p>
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="menu-divider">
+                </div>
+
+                <!-- Main Category: Cocktails -->
+                <div class="menu-category">
+                    <h2 class="category-title">Cocktails</h2>
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Mojito.webp"
+                            alt="Mojito">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Mojito</h4>
+                            <p class="menu-item-description">A refreshing cocktail with lime, mint, and soda water.</p>
+                        </div>
+                        <p class="menu-item-price">$6.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img class="menu-item-image"
+                            src="assets/menu_items/Margarita.webp"
+                            alt="Margarita">
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Margarita</h4>
+                            <p class="menu-item-description">A classic cocktail with syrup, lime juice, and triple
+                                sec.</p>
+                        </div>
+                        <p class="menu-item-price">$7.00</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
