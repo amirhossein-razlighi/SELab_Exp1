@@ -6,9 +6,8 @@
 
 **ابزارهای مورد استفاده:**
 - Git
-- Node.js
 - GitHub و GitHub Actions
-
+- html , CSS, JS
 ---
 
 #### مراحل انجام آزمایش
@@ -36,7 +35,7 @@
 **CSS and JavaScript Files**
 
      -    style.css: For styling the HTML structure.
-     -    main.js: Contains JavaScript code, likely for adding interactivity.
+     -    main.js: Contains JavaScript code adding interactivity for slideshow in gallery.
 
 **استقرار خودکار با GitHub Actions**
    - یک گردش‌کار GitHub Actions ایجاد کردیم تا پروژه به‌طور خودکار در GitHub Pages مستقر شود و هنگام پوش به شاخه `main` به‌روزرسانی شود. پیکربندی شامل مراحل نصب وابستگی‌ها، ساخت پروژه و استقرار بود. بخش اصلی به صورت زیر است:
