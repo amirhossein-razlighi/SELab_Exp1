@@ -198,7 +198,21 @@ input:focus, input:focus-visible {
     background-color: #947848; /* Equivalent to hover:bg-[#947848] */
     color: white; /* Equivalent to hover:text-white */
 }
-  
+
+#fullsize-image1,
+#fullsize-image2 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Transition for smooth fade */
+}
+
+#fullsize-image1.show,
+#fullsize-image2.show {
+    opacity: 1;
+    /* Make the image visible when the 'show' class is added */
+}
+
 .book-section__container {
     display: flex;
     flex-direction: column;
@@ -306,8 +320,84 @@ input:focus, input:focus-visible {
     font-size: 0.875rem; /* Equivalent to text-sm */
     color: #718096; /* Equivalent to text-gray-500 */
 }
-  
-.menu-header__container {
+
+/* styles for the Menu Page */
+.menu-section {
+    padding: 40px 20px;
+}
+
+.menu-title {
+    font-size: 36px;
+    color: #947848;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 28px;
+    color: #68502e;
+    margin-bottom: 20px;
+}
+
+.subcategory {
+    margin-bottom: 20px;
+}
+
+.subcategory-title {
+    font-size: 24px;
+    color: #947848;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e4e3;
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.menu-item-content {
+    flex-grow: 1;
+}
+
+.menu-item-title {
+    font-size: 20px;
+    color: #68502e;
+    margin-bottom: 5px;
+}
+
+.menu-item-description {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.menu-item-price {
+    font-size: 18px;
+    color: #947848;
+    font-weight: bold;
+}
+
+.menu-divider {
+    border: 0;
+    height: 1px;
+    background: #e1e4e3;
+    margin: 20px 0;
+}
+
+/* styles for gallery page */
+.gallery-header__container {
     width: 100%; /* Equivalent to w-full */
     display: flex;
     justify-content: center;
@@ -317,12 +407,12 @@ input:focus, input:focus-visible {
     background-color: rgba(235, 230, 232, 1); /* Equivalent to bg-[rgba(235,230,232,1)] */
 }
 
-.menu-header {
+.gallery-header {
     font-size: 2.5rem; /* Equivalent to text-[40px] */
     color: #947848; /* Equivalent to text-[#947848] */
 }
 
-.menu__container {
+.gallery__container {
     background-color: #ffffff; /* Equivalent to bg-white */
     padding-left: 1.5rem; /* Equivalent to px-6 */
     padding-right: 1.5rem; /* Equivalent to px-6 */
@@ -330,7 +420,7 @@ input:focus, input:focus-visible {
     padding-bottom: 3rem; /* Equivalent to py-12 */
 }
 
-.menu__first-section {
+.gallery__first-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,12 +428,12 @@ input:focus, input:focus-visible {
     padding-bottom: 3rem; /* Equivalent to pb-12 */
 }
 
-.table_menu td.c1 {
+.table_gallery td.c1 {
     text-align: left;
     width: 70%;
 }
 
-.table_menu td.c2 {
+.table_gallery td.c2 {
     width: 30%;
     color: #947848;
     font-size: 26px;
@@ -369,7 +459,7 @@ table td {
     padding: 20px;
 }
 
-.menu__second-section {
+.gallery__second-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -391,13 +481,6 @@ table td {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem; /* Equivalent to gap-4 */
-}
-
-.menu-divider {
-    border: 0;
-    height: 1px;
-    background: #e1e4e3;
-    margin: 20px 0;
 }
 
 /* Responsive adjustments */
